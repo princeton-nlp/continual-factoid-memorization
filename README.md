@@ -26,6 +26,11 @@ The figure above illustrates the setting. In stage 1, a base LLM (e.g., Llama 3)
 
 We found mixing data in either or both stages changes the dynamics of how factoids are memorized. Surprisingly, mixing *random word sequences* in stage 1 helps mitigate forgetting. In addition, we found mixing general pretraining data (not related to $D_A$) reduces forgetting as well. We call the collection of our mixing strategies REMIX (Random and Generic Data Mixing).
 
+## Dependencies
+```bash
+pip install -r requirements.txt
+```
+
 ## Dataset Preparation
 
 ### Stage 1
@@ -42,7 +47,6 @@ Run the following commend to download the datasets.
 ```bash
 ./scripts/prepare_data.sh
 ```
-
 
 ## Training
 We use FSDP for training. Most of our experiments can be done using 2 80G GPUs. With REMIX, sometimes 4 GPUs are needed for the 8B model.
