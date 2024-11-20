@@ -1,0 +1,6 @@
+torch==2.5.1
+transformers==4.46.2
+flash-attn==2.6.3
+tokenizers
+datasets
+rich
