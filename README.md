@@ -3,7 +3,7 @@
 This repository contains the code for paper [Continual Memorization of Factoids in Large Language Models](https://arxiv.org/abs/2411.07175).
 
 ## Updates
-- **[2024/11/12]** Initial release.
+- **[2024/11/20]** Initial release.
 
 ## Table of Contents
 - [Introduction](#introduction)
